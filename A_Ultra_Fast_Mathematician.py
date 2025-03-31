@@ -1,0 +1,6 @@
+a = (input())
+b = (input())
+dec_a = int(a, 2)
+dec_b = int(b, 2)
+c=bin(dec_a ^ dec_b)
+print("0"*(len(a)-len(c)+2)+c[2:])
