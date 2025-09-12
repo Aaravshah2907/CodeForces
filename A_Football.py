@@ -1,19 +1,21 @@
-zeroCount, oneCount,status =0,0,0
-s = input()
-for i in range(len(s)):
-    if s[i] == '1':
-        zeroCount = 0
-        oneCount += 1
-        if oneCount == 7:
-            print("YES")
-            status += 1
-            break
+n = int(input())
+first_team = input()
+second_team = ""
+user_inputs = []
+user_inputs.append(first_team)
+for i in range(n - 1):
+    next_team = input()
+    user_inputs.append(next_team)
+    if next_team != first_team and next_team != second_team:
+        second_team = next_team
+first_team_count = 0
+second_team_count = 0
+for i in range(n):
+    if user_inputs[i] == first_team:
+        first_team_count += 1
     else:
-        zeroCount += 1
-        oneCount = 0
-        if zeroCount == 7:
-            print("YES")
-            status += 1
-            break
-if not status:
-    print("NO")
+        second_team_count += 1
+if first_team_count > second_team_count:
+    print(first_team)
+else:
+    print(second_team)

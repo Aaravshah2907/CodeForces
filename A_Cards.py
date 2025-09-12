@@ -1,0 +1,5 @@
+n = int(input())
+word = input().strip()
+zeroes = word.count('z')
+ones = word.count('n')
+print('1 ' * ones + '0 ' * zeroes, end='')
