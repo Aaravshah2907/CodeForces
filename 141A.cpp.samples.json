@@ -1,0 +1,14 @@
+[
+  {
+    "input": "SANTACLAUS\nDEDMOROZ\nSANTAMOROZDEDCLAUS",
+    "expected_output": "YES"
+  },
+  {
+    "input": "PAPAINOEL\nJOULUPUKKI\nJOULNAPAOILELUPUKKI",
+    "expected_output": "NO"
+  },
+  {
+    "input": "BABBONATALE\nFATHERCHRISTMAS\nBABCHRISTMASBONATALLEFATHER",
+    "expected_output": "NO"
+  }
+]
