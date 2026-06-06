@@ -1,0 +1,302 @@
+<p>Since your goal is <strong>Codeforces + DSA in C++</strong>, I would
+optimise for <strong>contest readiness</strong>, not “becoming a C++
+developer”.</p>
+<p>The target is:</p>
+<blockquote>
+<p>In 4 weeks, be comfortable solving Div 2 A/B/C problems without STL
+slowing you down.</p>
+</blockquote>
+<hr />
+<h1 id="phase-1-stl-foundations-week-1">Phase 1: STL Foundations (Week
+1)</h1>
+<p><strong>Goal:</strong> Become fluent with the STL containers and
+algorithms used in 80% of CP problems.</p>
+<h2 id="day-1-vectors-pairs-iterators">Day 1 — Vectors, Pairs,
+Iterators</h2>
+<h3 id="learn">Learn</h3>
+<ul>
+<li><code>vector</code></li>
+<li><code>pair</code></li>
+<li>iterators</li>
+<li>range-based loops</li>
+<li><code>auto</code></li>
+</ul>
+<h3 id="resources">Resources</h3>
+<h4 id="video">Video</h4>
+<p><a
+href="https://www.youtube.com/playlist?list=PLauivoElc3ghxyYSr_sVnDUc_ynPk6iXE&amp;utm_source=chatgpt.com">Luv
+STL Playlist - Vector and Pair Videos</a></p>
+<h4 id="reading">Reading</h4>
+<p><a
+href="https://usaco.guide/gold/stl?lang=cpp&amp;utm_source=chatgpt.com">USACO
+Guide STL Basics</a></p>
+<h3 id="practice">Practice</h3>
+<p>Solve 5–10 problems requiring:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>vector<span class="op">&lt;</span><span class="dt">int</span><span class="op">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>pair<span class="op">&lt;</span><span class="dt">int</span><span class="op">,</span><span class="dt">int</span><span class="op">&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>sort<span class="op">()</span></span></code></pre></div>
+<hr />
+<h2 id="day-2-sets-and-maps">Day 2 — Sets and Maps</h2>
+<h3 id="learn-1">Learn</h3>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>set</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>multiset</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>map</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>unordered_map</span></code></pre></div>
+<h3 id="important-functions">Important Functions</h3>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>insert</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>erase</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>find</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>count</span></code></pre></div>
+<h3 id="resources-1">Resources</h3>
+<h4 id="video-1">Video</h4>
+<p>Continue Luv playlist.</p>
+<h4 id="reading-1">Reading</h4>
+<p><a
+href="https://en.cppreference.com/w/cpp/container?utm_source=chatgpt.com">cppreference
+Containers</a></p>
+<h3 id="practice-1">Practice</h3>
+<p>Frequency counting problems.</p>
+<p>Typical pattern:</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>map<span class="op">&lt;</span><span class="dt">int</span><span class="op">,</span><span class="dt">int</span><span class="op">&gt;</span> freq<span class="op">;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>freq<span class="op">[</span>x<span class="op">]++;</span></span></code></pre></div>
+<hr />
+<h2 id="day-3-algorithms">Day 3 — Algorithms</h2>
+<h3 id="learn-2">Learn</h3>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>sort</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>reverse</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>find</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>count</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>binary_search</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>lower_bound</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>upper_bound</span></code></pre></div>
+<h3 id="resource">Resource</h3>
+<p><a
+href="https://en.cppreference.com/w/cpp/algorithm?utm_source=chatgpt.com">cppreference
+Algorithms Library</a></p>
+<h3 id="practice-2">Practice</h3>
+<p>Search and sorting problems.</p>
+<hr />
+<h2 id="day-4-stack-queue-deque">Day 4 — Stack, Queue, Deque</h2>
+<h3 id="learn-3">Learn</h3>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>stack</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>queue</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>deque</span></code></pre></div>
+<h3 id="practice-3">Practice</h3>
+<p>Simple simulation problems.</p>
+<hr />
+<h2 id="day-5-priority-queue">Day 5 — Priority Queue</h2>
+<h3 id="learn-4">Learn</h3>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>priority_queue<span class="op">&lt;</span><span class="dt">int</span><span class="op">&gt;</span></span></code></pre></div>
+<p>and</p>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>priority_queue<span class="op">&lt;</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span><span class="op">,</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    vector<span class="op">&lt;</span><span class="dt">int</span><span class="op">&gt;,</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    greater<span class="op">&lt;</span><span class="dt">int</span><span class="op">&gt;</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span></span></code></pre></div>
+<h3 id="practice-4">Practice</h3>
+<p>Top K elements.</p>
+<hr />
+<h2 id="day-67-stl-revision">Day 6–7 — STL Revision</h2>
+<p>Build a cheatsheet.</p>
+<p>For every STL container write:</p>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>Declaration</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>Insertion</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>Deletion</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>Search</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>Complexities</span></code></pre></div>
+<hr />
+<h1 id="phase-2-competitive-programming-stl-week-2">Phase 2: Competitive
+Programming STL (Week 2)</h1>
+<p>Now start learning the STL pieces that appear constantly in
+contests.</p>
+<hr />
+<h2 id="day-8">Day 8</h2>
+<h3 id="learn-5">Learn</h3>
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>string</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>stringstream</span></code></pre></div>
+<p>Resource:</p>
+<p><a
+href="https://en.cppreference.com/w/cpp/string/basic_string?utm_source=chatgpt.com">cppreference
+String Library</a></p>
+<hr />
+<h2 id="day-9">Day 9</h2>
+<h3 id="learn-6">Learn</h3>
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>next_permutation</span></code></pre></div>
+<h3 id="practice-5">Practice</h3>
+<p>Permutation generation problems.</p>
+<hr />
+<h2 id="day-10">Day 10</h2>
+<h3 id="learn-7">Learn</h3>
+<p>Custom comparators.</p>
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>sort<span class="op">(</span>v<span class="op">.</span>begin<span class="op">(),</span> v<span class="op">.</span>end<span class="op">(),</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>     <span class="op">[](</span><span class="dt">int</span> a<span class="op">,</span> <span class="dt">int</span> b<span class="op">){</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>         <span class="cf">return</span> a<span class="op">&gt;</span>b<span class="op">;</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>     <span class="op">});</span></span></code></pre></div>
+<hr />
+<h2 id="day-11">Day 11</h2>
+<h3 id="learn-8">Learn</h3>
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>vector<span class="op">&lt;</span>pair<span class="op">&lt;</span><span class="dt">int</span><span class="op">,</span><span class="dt">int</span><span class="op">&gt;&gt;</span></span></code></pre></div>
+<p>Sorting pairs.</p>
+<hr />
+<h2 id="day-12">Day 12</h2>
+<h3 id="learn-9">Learn</h3>
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>multiset</span></code></pre></div>
+<p>Very common in Div2 C/D.</p>
+<hr />
+<h2 id="day-13">Day 13</h2>
+<h3 id="learn-10">Learn</h3>
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>unordered_map</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>unordered_set</span></code></pre></div>
+<p>Understand average O(1).</p>
+<hr />
+<h2 id="day-14">Day 14</h2>
+<p>Revision.</p>
+<p>Attempt a 2-hour virtual contest.</p>
+<p>Use only STL.</p>
+<hr />
+<h1 id="phase-3-dsa-stl-together-week-3">Phase 3: DSA + STL Together
+(Week 3)</h1>
+<p>Now STL becomes a tool instead of the topic.</p>
+<hr />
+<h2 id="binary-search">Binary Search</h2>
+<p>Resource:</p>
+<p><a
+href="https://usaco.guide/silver/binary-search?utm_source=chatgpt.com">USACO
+Guide Binary Search</a></p>
+<p>Learn:</p>
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>lower_bound</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>upper_bound</span></code></pre></div>
+<p>inside real problems.</p>
+<hr />
+<h2 id="prefix-sums">Prefix Sums</h2>
+<p>Resource:</p>
+<p><a href="https://cses.fi/book/book.pdf?utm_source=chatgpt.com">CP
+Handbook (free PDF)</a></p>
+<p>Read:</p>
+<ul>
+<li>Prefix sums</li>
+<li>Range queries</li>
+</ul>
+<hr />
+<h2 id="two-pointers">Two Pointers</h2>
+<p>Resource:</p>
+<p><a
+href="https://usaco.guide/silver/two-pointers?utm_source=chatgpt.com">USACO
+Guide Two Pointers</a></p>
+<hr />
+<h2 id="sliding-window">Sliding Window</h2>
+<p>Often uses:</p>
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>map</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>unordered_map</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>deque</span></code></pre></div>
+<hr />
+<h1 id="phase-4-contest-readiness-week-4">Phase 4: Contest Readiness
+(Week 4)</h1>
+<p>Now stop learning STL.</p>
+<p>Start solving.</p>
+<hr />
+<h2 id="daily">Daily</h2>
+<h3 id="codeforces-a-problems">2 Codeforces A Problems</h3>
+<h3 id="codeforces-b-problems">2 Codeforces B Problems</h3>
+<h3 id="cses-problem">1 CSES Problem</h3>
+<hr />
+<h2 id="resources-2">Resources</h2>
+<h3 id="cses-problem-set">CSES Problem Set</h3>
+<p><a href="https://cses.fi/problemset/?utm_source=chatgpt.com">CSES
+Problem Set</a></p>
+<p>This is probably the best free DSA practice source.</p>
+<hr />
+<h3 id="codeforces">Codeforces</h3>
+<p><a
+href="https://codeforces.com/problemset?utm_source=chatgpt.com">Codeforces
+Problemset</a></p>
+<hr />
+<h3 id="cp-handbook">CP Handbook</h3>
+<p><a
+href="https://cses.fi/book/book.pdf?utm_source=chatgpt.com">Competitive
+Programmer’s Handbook PDF</a></p>
+<p>Read alongside solving.</p>
+<hr />
+<h1 id="resources-ranked">Resources Ranked</h1>
+<p>If I had to pick only 5:</p>
+<h3 id="luv-stl-playlist">1. Luv STL Playlist</h3>
+<p><a
+href="https://www.youtube.com/playlist?list=PLauivoElc3ghxyYSr_sVnDUc_ynPk6iXE&amp;utm_source=chatgpt.com">Luv
+STL Playlist</a></p>
+<hr />
+<h3 id="usaco-guide">2. USACO Guide</h3>
+<p><a href="https://usaco.guide/?utm_source=chatgpt.com">USACO
+Guide</a></p>
+<hr />
+<h3 id="cses-problem-set-1">3. CSES Problem Set</h3>
+<p><a href="https://cses.fi/problemset/?utm_source=chatgpt.com">CSES
+Problem Set</a></p>
+<hr />
+<h3 id="competitive-programmers-handbook">4. Competitive Programmer’s
+Handbook</h3>
+<p><a
+href="https://cses.fi/book/book.pdf?utm_source=chatgpt.com">Competitive
+Programmer’s Handbook</a></p>
+<hr />
+<h3 id="cppreference">5. cppreference</h3>
+<p><a
+href="https://en.cppreference.com/?utm_source=chatgpt.com">cppreference</a></p>
+<hr />
+<h1 id="stl-mastery-checklist">STL Mastery Checklist</h1>
+<p>Before moving to harder DSA, you should be able to write from
+memory:</p>
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>vector</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>pair</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>map</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>set</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>multiset</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>unordered_map</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>unordered_set</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>stack</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>queue</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>deque</span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>priority_queue</span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>sort</span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>binary_search</span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a>lower_bound</span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a>upper_bound</span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a>next_permutation</span>
+<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a>lambda comparator</span>
+<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a><span class="kw">auto</span></span>
+<span id="cb18-22"><a href="#cb18-22" aria-hidden="true" tabindex="-1"></a>range based loops</span></code></pre></div>
+<p>Once these are second nature, the highest ROI topics are:</p>
+<ol type="1">
+<li>Binary Search</li>
+<li>Prefix Sums</li>
+<li>Two Pointers</li>
+<li>Sliding Window</li>
+<li>Greedy</li>
+<li>Recursion &amp; Backtracking</li>
+<li>Trees</li>
+<li>Graphs</li>
+<li>DP</li>
+</ol>
+<p>That’s roughly the progression followed by many strong Codeforces
+users. You can paste this directly into a document and export it as a
+PDF study plan.</p>

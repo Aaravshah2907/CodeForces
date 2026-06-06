@@ -1,0 +1,6 @@
+[
+  {
+    "input": "5\n1 2\n1 3\n1234567890 12345678900\n2 8\n7 84\n",
+    "expected_output": "NO\nYES\nYES\nYES\nYES\n"
+  }
+]
