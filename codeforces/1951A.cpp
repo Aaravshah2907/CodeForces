@@ -29,7 +29,19 @@ bool ckmax(T &a, const T &b)
 }
 
 void solve(){
-
+    int n;
+    cin >> n;
+    string s;
+    cin >> s;
+    int cnt = 0, mi = n, ma = -1;
+    for (int i = 0; i < n; i++){
+        if (s[i] == '1'){
+            cnt++;
+            mi = min(mi, i);
+            ma = max(ma, i);
+        }
+    }
+    cout << (cnt % 2 == 1 || ( cnt == 2 && ma == mi + 1) ? "NO" : "YES") << nl; 
 }
 
 int main(){

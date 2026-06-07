@@ -16,7 +16,6 @@ void solve()
         }
     }
     cout << (ans ? "YES" : "NO") << "\n";
-
 }
 
 int main()

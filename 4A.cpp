@@ -7,7 +7,11 @@ void solve()
 {
     int t;
     cin >> t;
-
+    if ( t > 2 && t % 2 == 0)    {
+        cout << "YES\n";
+    } else {
+        cout << "NO\n";
+    }
 }
 
 int main()
@@ -16,14 +20,7 @@ int main()
         ios::sync_with_stdio(false);
         cin.tie(NULL);
 
-        int n;
-        if (cin >> n)
-        {
-            while (n--)
-            {
-                solve();
-            }
-        }
+        solve();
 
         return 0;
     }

@@ -29,7 +29,22 @@ bool ckmax(T &a, const T &b)
 }
 
 void solve(){
-
+    int events;
+    cin >> events;
+    int police = 0, crime_unnoticed = 0;
+    for (int i = 0; i < events; i++){
+        int event;
+        cin >> event;
+        if (event > 0)
+            police += event;
+        else if (event < 0){
+            if (police > 0)
+                police--;
+            else
+                crime_unnoticed++;
+        }
+    }
+    cout << crime_unnoticed << nl;
 }
 
 int main(){
@@ -37,7 +52,7 @@ int main(){
     cin.tie(nullptr);
 
     int T = 1;
-    cin >> T;
+    //cin >> T;
 
     while (T--)
         solve();

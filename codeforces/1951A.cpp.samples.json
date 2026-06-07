@@ -1,0 +1,15 @@
+[
+  {
+    "input": "5\n10\n1101010110\n10\n1001001110\n6\n000000\n1\n1\n12\n111111111111",
+    "expected_output": "YES\nNO\nYES\nNO\nYES",
+    "input_block_sizes": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "input_output_offset": 1
+  }
+]

@@ -29,7 +29,10 @@ bool ckmax(T &a, const T &b)
 }
 
 void solve(){
-
+    int x;
+    cin >> x;
+    cout << "Division " << (x <= 1399 ? 4 : x <= 1599 ? 3 : x <= 1899 ? 2 : 1) << nl;
+    return;
 }
 
 int main(){

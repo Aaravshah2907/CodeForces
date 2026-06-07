@@ -1,0 +1,17 @@
+[
+  {
+    "input": "7\n-789\n1299\n1300\n1399\n1400\n1679\n2300",
+    "expected_output": "Division 4\nDivision 4\nDivision 4\nDivision 4\nDivision 3\nDivision 2\nDivision 1",
+    "input_block_sizes": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "input_output_offset": 1
+  }
+]
