@@ -28,8 +28,28 @@ bool ckmax(T &a, const T &b)
     return a < b ? a = b, true : false;
 }
 
-void solve(){
+ll gcd(const vll &a){
+    ll res = 0;
+    for (ll x : a){
+        if (res == 1) return res;
+        res = std::gcd(res, x);
+    }
+    return res;
+}
 
+void solve(){
+    int n;
+    cin >> n;
+    vll a(n);
+    for (ll &x : a) cin >> x;
+    ll maxNum = 0;
+    for (ll num : a){
+        maxNum = max(maxNum, num);
+    }
+    ll d = gcd(a);
+    ll rounds = maxNum / d - n;
+    if (rounds % 2 == 1) cout << "Alice" << nl;
+    else cout << "Bob" << nl;
 }
 
 int main(){
@@ -37,7 +57,6 @@ int main(){
     cin.tie(nullptr);
 
     int T = 1;
-    cin >> T;
 
     while (T--)
         solve();
