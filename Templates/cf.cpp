@@ -23,8 +23,7 @@ bool ckmin(T &a, const T &b){
 }
 
 template <class T>
-bool ckmax(T &a, const T &b)
-{
+bool ckmax(T &a, const T &b){
     return a < b ? a = b, true : false;
 }
 
@@ -37,10 +36,8 @@ int main(){
     cin.tie(nullptr);
 
     int T = 1;
-    cin >> T;
 
-    while (T--)
-        solve();
-
+    if (!(cin >> T)) return 0;
+    while (T--) solve();
     return 0;
 }
