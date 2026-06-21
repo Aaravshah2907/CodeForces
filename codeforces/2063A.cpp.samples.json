@@ -1,0 +1,16 @@
+[
+  {
+    "input": "6\n1 2\n1 10\n49 49\n69 420\n1 1\n9982 44353",
+    "expected_output": "1\n9\n0\n351\n1\n34371",
+    "input_block_sizes": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "input_output_offset": 1
+  }
+]

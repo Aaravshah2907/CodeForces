@@ -1,0 +1,13 @@
+[
+  {
+    "input": "3\n4\n0 0 0 0\n3\n1 2 0\n5\n1 2 1 2 1",
+    "expected_output": "4\n2\n2",
+    "input_block_sizes": [
+      1,
+      2,
+      2,
+      2
+    ],
+    "input_output_offset": 1
+  }
+]
